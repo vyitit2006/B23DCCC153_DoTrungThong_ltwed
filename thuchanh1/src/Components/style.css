@@ -1,0 +1,77 @@
+/* Bao quanh toàn bộ danh sách công việc */
+.todo-container {
+    background-color: #f0f4f8; /* Màu nền cho container */
+    border-radius: 12px; /* Bo góc cho container */
+    padding: 20px; /* Khoảng cách bên trong cho container */
+    max-width: 600px; /* Chiều rộng tối đa */
+    margin: auto; /* Căn giữa */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Mỗi mục công việc */
+.ToDoItem {
+    display: flex;
+    align-items: center;
+    padding: 15px; /* Khoảng cách bên trong cho mỗi mục */
+    border-bottom: 2px solid #007bff; /* Đường viền dưới cho mỗi mục */
+    border-radius: 8px; /* Bo góc cho mục công việc */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+    background-color: #cdd3f5; /* Màu nền cho mỗi mục */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp khi hover */
+}
+
+.ToDoItem:hover {
+    background-color: #6e7373; /* Màu nền khi hover */
+}
+
+/* Nội dung của công việc */
+.ItemContent {
+    margin-right: 50px;
+    margin-left: 10px;
+    width: 90%;
+}
+
+/* Tiêu đề và ngày hết hạn */
+.ToDoItem .Title {
+    font-size: 18px; /* Tăng kích thước font cho tiêu đề */
+    color: #333; /* Màu chữ tiêu đề */
+}
+
+.ToDoItem .DueDate {
+    font-size: 14px; /* Tăng kích thước font cho ngày hết hạn */
+    color: #555; /* Màu nhạt cho ngày hết hạn */
+}
+
+/* Hành động trong mỗi mục công việc */
+.ToDoItem .Action * {
+    margin-right: 5px;
+}
+
+/* Kiểu cho checkbox */
+.ToDoItem input[type="checkbox"] {
+    appearance: none; /* Loại bỏ kiểu mặc định của checkbox */
+    -webkit-appearance: none; /* Loại bỏ kiểu mặc định cho trình duyệt WebKit */
+    -moz-appearance: none; /* Loại bỏ kiểu mặc định cho Firefox */
+    width: 24px; /* Đặt kích thước checkbox */
+    height: 24px; /* Đặt kích thước checkbox */
+    background-color: #fff; /* Màu nền */
+    border: 2px solid #007bff; /* Đặt viền */
+    border-radius: 4px; /* Bo góc cho checkbox */
+    position: relative;
+    cursor: pointer; /* Con trỏ chuột khi hover */
+}
+
+.ToDoItem input[type="checkbox"]:checked {
+    background-color: #007bff; /* Màu nền khi được chọn */
+    border-color: #007bff; /* Màu viền khi được chọn */
+}
+
+.ToDoItem input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Biểu tượng dấu check (dùng mã Unicode) */
+    color: rgb(3, 3, 3); /* Màu của dấu check */
+    font-size: 16px; /* Tăng kích thước font cho dấu check */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
