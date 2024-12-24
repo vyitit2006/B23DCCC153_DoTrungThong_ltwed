@@ -1,0 +1,252 @@
+.progile-bg{
+    background-image: url(../image/profilebg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.imge{
+    width: 250px;
+    height: 260px;
+    display: block;
+    margin-left: 200px
+}
+.profile-main{
+    background-color: rgba(255, 255, 255, 0.905);
+    padding: 30px 80px;
+    border-radius: 10px;
+    width: 859px;
+    margin:50px 300px;
+    height: 100%;
+
+}
+.profile-main label{
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+.profile-main p{
+    display: inline-block;
+    padding: 10px;
+    color: green;
+    background-color: rgba(216, 214, 214,0.5);
+    width: 400px;
+   
+}
+textarea{
+   border: none;
+   background-color: rgba(216, 214, 214,0.5);
+   outline: none;
+}
+.btne{
+    color: white;
+    background-color: rgba(26, 112, 26, 0.689);
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.profile-ul{
+    list-style-type: none;
+    padding-inline-start: 1px;
+}
+.profile-li{
+    background-color: rgb(246, 233, 217);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    width: 425px;
+    word-wrap: break-word;  
+    position: relative;
+    height: 100%;
+}
+.profile-li button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border-radius: 5px;
+    border:none;
+    color: red;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    padding-bottom: 35px;
+
+}
+.profile-li button:hover{
+    background-color:rgba(246, 1, 1, 0.575);
+    color: white;
+}
+.savebutton{
+    color: white;
+    background-color: rgb(232, 117, 10);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 80px;
+    width: 118px;
+    font-weight: 500;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Tối hơn để tạo hiệu ứng nổi bật */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: left;
+    width: 450px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    font-family: "Arial", sans-serif;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .modal-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .modal-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .modal-content ul li {
+    background: #f8f8f8;
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-close-btn {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .modal-close-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Hiệu ứng mờ dần khi modal xuất hiện */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Định dạng phần địa chỉ mặc định */
+.profile-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 8px 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 16px; /* Chỉnh font chữ */
+  color: #333;
+}
+
+/* Nút xóa địa chỉ mặc định */
+.profile-address button {
+  background-color: #e63e3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.profile-address button:hover {
+  background-color: #c62828;
+}
+
+/* Định dạng danh sách địa chỉ phụ */
+.profile-ul {
+  list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+  padding: 0;
+  margin: 0;
+}
+
+.profile-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fef9f3;
+  padding: 8px 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 16px; /* Chỉnh font chữ */
+  color: #333;
+}
+
+.profile-li button {
+  background-color: #e63e3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.profile-li button:hover {
+  background-color: #c62828;
+}
+
+/* Nút lưu */
+.savebutton {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.savebutton:hover {
+  background-color: #e68900;
+}
